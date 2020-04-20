@@ -19,7 +19,6 @@
 
 require 'chef/config'
 require 'uri'
-require 'chef/rest'
 # These are needed so that JSON can inflate search results
 require 'chef/node'
 require 'chef/role'
@@ -32,7 +31,7 @@ class PartialSearch
   attr_accessor :rest
 
   def initialize(url=nil)
-    @rest = ::Chef::REST.new(url || ::Chef::Config[:chef_server_url])
+    @rest = ::Chef::ServerAPI.new(url || ::Chef::Config[:chef_server_url])
   end
 
   # Search Solr for objects of a given type, for a given query. If you give
