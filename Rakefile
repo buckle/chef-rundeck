@@ -4,12 +4,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "chef-rundeck"
+    gem.name = "bke_chef-rundeck"
     gem.summary = %Q{Integrates Chef with RunDeck}
     gem.description = %Q{Provides a resource endpoint for RunDeck from a Chef Server}
-    gem.email = "adam@opscode.com"
-    gem.homepage = "http://github.com/opscode/chef-rundeck"
-    gem.authors = ["Adam Jacob"]
+    gem.email = "wsdsysadmin@buckle.com"
+    gem.homepage = "https://github.com/buckle/chef-rundeck"
+    gem.authors = ["Shane Blaufuss"]
     gem.add_dependency "sinatra"
     gem.add_dependency "chef"
     gem.add_dependency "mixlib-cli"

@@ -18,7 +18,7 @@
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "..", "lib")))
 
 require 'rubygems'
-require 'chef-rundeck'
+require 'bke_chef-rundeck'
 require 'mixlib/cli'
 
 class ChefRundeckCLI
